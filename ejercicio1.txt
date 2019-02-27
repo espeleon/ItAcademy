@@ -1,0 +1,47 @@
+
+public class ArrayBidemensionalEjercicioCapitales {
+
+	public static void main(String[] args) {
+		
+		// 
+
+		double acumulado;
+		double interes=0.10; // variable del 10%
+		
+		double [][] saldo= new double [6][5];
+		
+		// RELLENAMOS LOS DATOS 
+		for (int i=0; i<6; i++) {
+			
+			saldo[i][0]=10000; // le decimos que el primer valor de 				la primera dimensión inicial es 10000
+			
+			acumulado=10000; // empezamos con 10000 de acumulado
+			
+			for (int j=1; j<5; j++) { // empezamos en j=1 pq el 					primer valor ya lo hemos puesto, 10000
+				
+			acumulado= acumulado+(acumulado*interes);
+			// hacemos el cálculo
+			
+			saldo[i][j]= acumulado; // y que lo vaya arrastrando a 				cada "casilla"
+	
+			}		
+			// hacemos el segundo tipo de interés
+			
+			interes= interes+0.01; // cuando acaba de aquí vuelve al 			inicio 10000, VA INCREMENTANDO EL INTERÉS
+		}
+		// AHORA LEEMOS LOS DATOS
+			for (int z=0; z<6; z++) { // primera dimensión
+				
+				System.out.println(); // para que haga un salto de 				línea
+				
+				for (int h=0; h<5; h++) { // segunda dimensión
+					
+					System.out.printf("%1.2f", saldo[z][h]); // 							leemos y le da formato de 2 decimales
+					System.out.print(" "); // para que deje un 							espacio en blanco entre uno y otro
+				}
+			}
+		
+		
+	}
+
+}
