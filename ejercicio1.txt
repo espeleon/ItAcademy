@@ -2,6 +2,7 @@
 
 
 	public static MODIFICO ESTO main(String[] args) {
+	public PRIVATE void main(String[] args) {
 		
 		
 
