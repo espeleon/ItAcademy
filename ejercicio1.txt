@@ -13,21 +13,21 @@ public class ArrayBidemensionalEjercicioCapitales {
 		// RELLENAMOS LOS DATOS 
 		for (int i=0; i<6; i++) {
 			
-			saldo[i][0]=10000; // le decimos que el primer valor de 				la primera dimensión inicial es 10000
+			saldo[i][0]=10000; // le decimos que el primer valor de 				
 			
 			acumulado=10000; // empezamos con 10000 de acumulado
 			
-			for (int j=1; j<5; j++) { // empezamos en j=1 pq el 					primer valor ya lo hemos puesto, 10000
+			for (int j=1; j<5; j++) { // empezamos en j=1 pq el 					
 				
 			acumulado= acumulado+(acumulado*interes);
 			// hacemos el cálculo
 			
-			saldo[i][j]= acumulado; // y que lo vaya arrastrando a 				cada "casilla"
+			saldo[i][j]= acumulado; // y que lo vaya arrastrando a 				
 	
 			}		
 			// hacemos el segundo tipo de interés
 			
-			interes= interes+0.01; // cuando acaba de aquí vuelve al 			inicio 10000, VA INCREMENTANDO EL INTERÉS
+			interes= interes+0.01; // cuando acaba de aquí vuelve al 			
 		}
 		// AHORA LEEMOS LOS DATOS
 			for (int z=0; z<6; z++) { // primera dimensión
